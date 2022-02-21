@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;
+            border:12px solid rgb(0, 26, 255);
+        }
+        p    {color: rgb(255, 255, 255);}
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {background-color: #ff0000;}
+    </style>
+    
+
+<head>
+<title>Kino-Online</title>
+</head>
+<body>
+
+
+<h1 style = "text-align: center;">Kino</h1>
+<p style="background-color:DodgerBlue; text-align: center;">Hier sind einfach ein paar Elemente die wir noch ändern.</p>
+
+
+<button class = "button button1" 
+style = "display: block;
+margin-left: auto;
+margin-right: auto;"
+onclick = "button1()">Ok!</button>
+
+<script>
+    var counter = 0;
+    function button1(){
+        counter++;
+        document.getElementById("myText").innerHTML = counter;
+
+    }
+</script>
+
+<p style="background-color:DodgerBlue; text-align: center;"><span id="myText"></span></p>
+    
+<img style = "display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;"  src="stock.jpg">
+
+
+</body>
+</html>
